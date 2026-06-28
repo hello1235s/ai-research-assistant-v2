@@ -1,1 +1,0 @@
-# ai-research-assistant-v2

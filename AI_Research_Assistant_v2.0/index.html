@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Research Assistant v2.0</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .header {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 1px solid #30363d;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: #8b949e;
+        }
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        .card h2 {
+            color: #58a6ff;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 20px 0; }
+        .feature {
+            background: #21262d;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .feature:hover { border-color: #58a6ff; transform: translateY(-3px); }
+        .feature-icon { font-size: 2rem; margin-bottom: 10px; }
+        .feature-title { font-weight: 600; color: #fff; margin-bottom: 5px; }
+        .feature-desc { font-size: 0.9rem; color: #8b949e; }
+        .tech-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .tech-table th { background: #21262d; padding: 12px; text-align: left; border: 1px solid #30363d; color: #fff; }
+        .tech-table td { padding: 12px; border: 1px solid #30363d; }
+        .tech-table tr:hover { background: #21262d; }
+        .download-btn {
+            display: inline-block;
+            background: #238636;
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin: 20px 0;
+        }
+        .download-btn:hover { background: #2ea043; transform: translateY(-2px); }
+        .footer { text-align: center; padding: 40px 0; border-top: 1px solid #30363d; margin-top: 40px; color: #8b949e; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔬 AI Research Assistant v2.0</h1>
+            <p class="subtitle">AI Intelligent Research Assistant based on Kimi Large Model</p>
+            <p class="subtitle">Designed for AI and Low-Altitude Technology Researchers</p>
+        </div>
+
+        <div class="card">
+            <h2>Quick Start</h2>
+            <p>Double-click <strong>start.bat</strong> to launch. The script will automatically detect Python, install dependencies, and start the application.</p>
+            <p>Open browser: <strong>http://localhost:8501</strong></p>
+        </div>
+
+        <div class="card">
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">💬</div>
+                    <div class="feature-title">Smart Chat</div>
+                    <div class="feature-desc">Multi-turn context-aware conversation with persistent history</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📝</div>
+                    <div class="feature-title">Code Assist</div>
+                    <div class="feature-desc">Intelligent Python code generation, explanation, and bug fix</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <div class="feature-title">Data Analysis</div>
+                    <div class="feature-desc">CSV/Excel/JSON upload, 7 interactive visualizations, AI-generated reports</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📄</div>
+                    <div class="feature-title">Paper Writing</div>
+                    <div class="feature-desc">Intelligent paper structure planning, bilingual abstracts, 4 citation formats</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📚</div>
+                    <div class="feature-title">Knowledge Base</div>
+                    <div class="feature-desc">5 structured knowledge domains with full-text search</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔐</div>
+                    <div class="feature-title">User System</div>
+                    <div class="feature-desc">Registration/Login/Password encryption, API Key AES encryption</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Tech Stack</h2>
+            <table class="tech-table">
+                <tr><th>Technology</th><th>Purpose</th><th>Version</th></tr>
+                <tr><td><strong>Kimi API</strong></td><td>Large Model Engine</td><td>k2.5</td></tr>
+                <tr><td><strong>Streamlit</strong></td><td>Web Application Framework</td><td>1.28+</td></tr>
+                <tr><td><strong>SQLite</strong></td><td>Database (Zero-Config)</td><td>3.39+</td></tr>
+                <tr><td><strong>SQLAlchemy</strong></td><td>ORM Database Operations</td><td>2.0+</td></tr>
+                <tr><td><strong>bcrypt</strong></td><td>Password Hashing</td><td>4.0+</td></tr>
+                <tr><td><strong>cryptography</strong></td><td>AES Symmetric Encryption</td><td>41.0+</td></tr>
+            </table>
+        </div>
+
+        <div class="card" style="text-align: center;">
+            <h2>Download</h2>
+            <a href="https://github.com/hello1235s/ai-research-assistant-v2/raw/main/AI%E6%99%BA%E8%83%BD%E7%A7%91%E7%A0%94%E8%BE%85%E5%8A%A9%E5%8A%A9%E6%89%8B_v2.0_%E5%BC%A0%E9%A9%B0_202530463528.zip" class="download-btn">Download v2.0</a>
+        </div>
+
+        <div class="footer">
+            <p><strong>Developer:</strong> Zhang Chi | <strong>Student ID:</strong> 202530463528</p>
+            <p><strong>Class:</strong> AI & Low-Altitude Technology 3 | <strong>College:</strong> School of Automation Science and Engineering</p>
+            <p>Version v2.0 - SQLite Professional Edition</p>
+        </div>
+    </div>
+</body>
+</html>
